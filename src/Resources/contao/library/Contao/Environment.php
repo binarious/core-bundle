@@ -339,7 +339,7 @@ class Environment
 		// SSL proxy
 		if ($xhost != '' && $xhost == \Config::get('sslProxyDomain'))
 		{
-			return 'https://' . $xhost . '/' . $host;
+			return 'https://' . $xhost;
 		}
 
 		return (static::get('ssl') ? 'https://' : 'http://') . $host;
